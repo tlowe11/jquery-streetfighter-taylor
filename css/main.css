@@ -1,51 +1,79 @@
 body {
-  background-color: black;
+	background-color: black;
 }
- 
+
 .main {
-  background-color: white;
-  margin-top: 110px;
-  min-width: 1200px;
-  padding-left: 100px;
-  height: 500px;
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
 }
- 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
-  background-repeat: no-repeat;
-} 
-  
-.hadouken {
-  background-image: url('../images/hadouken.gif');
-  width: 156px; 
-  height: 90px;
-  display: none;
-  float: left;
-  position: relative;
-  top: 167px;
-  left: -212px;
-} 
- 
-.ryu {
-  float: left;
+
+img {
+	width: 750px;
+	height: auto;
 }
- 
-.ryu-ready, .ryu-still, .ryu-throwing {
-  width: 659px;
-  height: 494px;
+
+.instructions {
+	text-align: center;
+	padding-top: 150px;
 }
- 
-.ryu-ready, .ryu-throwing {
-  display: none;
-} 
- 
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+ul {
+	line-height: 45px;
+	font-size: 15px;
+}
+
+.ryu, .instructions {
+	float: left;
+	display: none;
+	font-family: Helvetica;
+	font-style: italic;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+	width: 659px;
+	height: 494px;
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool, .logo {
+	background-repeat: no-repeat;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool {
+	display: none;
+}
+
 .ryu-ready {
-  background-image: url('../images/ryu-ready-position.gif');
+	background-image: url('../images/ryu-ready-position.gif')
 }
- 
+
 .ryu-still {
-  background-image: url('../images/ryu-standing-still.png');
+	background-image: url('../images/ryu-standing-still.png');
 }
- 
+
 .ryu-throwing {
-  background-image: url('../images/ryu-throwing-hadouken.png');
+	background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken {
+	background-image: url('../images/hadouken.gif');
+	width: 156px;
+	height: 90px;
+	display: none;
+	position: relative;
+	z-index: 4;
+	top: 167px;
+	left: -216px;
+	float: left;
 }
